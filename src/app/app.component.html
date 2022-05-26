@@ -1,0 +1,9 @@
+
+<div *ngIf="!getUserName()">
+  <button type="button" (click)="login()">Login</button>
+</div>
+
+<div *ngIf="getUserName()">
+  <h2>Hello {{getUserName()}}</h2>
+  <button type="button" (click)="logout()">Logout</button>
+</div>
